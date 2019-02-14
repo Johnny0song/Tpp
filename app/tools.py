@@ -33,11 +33,15 @@ responseData={
     }
 }
 '''
+class IconFormat(fields.Raw):
+    def format(self, value):
+        return '/static/img/' + value
+
 
 user_fields = {
     'id': fields.Integer,
     'name': fields.String,
-    'icon': fields.String,
+    'icon': IconFormat(attribute='icon'),
     'token': fields.String
 }
 

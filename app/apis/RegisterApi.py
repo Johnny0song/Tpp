@@ -15,7 +15,7 @@ parser = reqparse.RequestParser()
 parser.add_argument('name',type=str,required=True,help='name参数缺失')
 parser.add_argument('password',type=str,required=True,help='password参数缺失')
 parser.add_argument('email',type=str,required=True,help='email参数缺失')
-parser.add_argument('phone',type=str)
+parser.add_argument('phone',type=str,required =True,help='phone参数缺失')
 
 
 

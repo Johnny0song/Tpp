@@ -32,6 +32,7 @@ class activeResource(Resource):
 
         token = parse.get('token')
         value = cache.get(token)
+
         if value:
             user = User.query.filter(User.token == token).first()
             user.is_active = True
