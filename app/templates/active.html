@@ -1,0 +1,23 @@
+<style>
+    .title{
+        color: blueviolet;
+    }
+</style>
+<body>
+    <p class="title">
+        尊敬的 {{ name }}:
+    </p>
+
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;感谢对本公司大力支持！
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;点击激活账号(有效期30分钟): <a href="{{ active_url }}">激活</a>
+    </p>
+    <br>
+    <p>
+        如果上述链接不可用，请手动复制一下内容到浏览器中激活!
+    </p>
+    <p>
+        {{ active_url }}
+    </p>
+</body>
